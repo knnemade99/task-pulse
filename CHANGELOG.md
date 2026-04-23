@@ -10,7 +10,7 @@ All notable changes to the "task-pulse" extension will be documented in this fil
 - Sequential command execution with live terminal output
 - Colored step-by-step progress indicators (running, passed, failed)
 - Summary report with passed/failed/skipped counts and total elapsed time
-- `TaskPulse: Run Command Group` command with quick-pick selector
+- `Task Pulse: Run Command Group` command with quick-pick selector
 - `Cmd+Shift+R` / `Ctrl+Shift+R` keyboard shortcut
 - `taskPulse.stopOnError` setting to halt on first failure
 - `taskPulse.autoCloseTerminal` setting to auto-close terminal after completion

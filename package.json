@@ -1,6 +1,6 @@
 {
   "name": "task-pulse",
-  "displayName": "TaskPulse",
+  "displayName": "Task Pulse",
   "description": "Run a configurable series of terminal commands sequentially, with live step-by-step output in the terminal.",
   "version": "0.0.1",
   "publisher": "knnemade99",
@@ -31,7 +31,7 @@
   "main": "./out/extension.js",
   "contributes": {
     "configuration": {
-      "title": "TaskPulse",
+      "title": "Task Pulse",
       "properties": {
         "taskPulse.commandGroups": {
           "type": "object",
@@ -43,7 +43,7 @@
           },
           "default": {
             "greet": [
-              "echo TaskPulse!"
+              "echo Task Pulse!"
             ]
           },
           "description": "Named groups of commands to run sequentially. Each key is a group name, each value is an array of shell commands."
@@ -63,7 +63,7 @@
     "commands": [
       {
         "command": "taskPulse.runGroup",
-        "title": "TaskPulse: Run Command Group"
+        "title": "Task Pulse: Run Command Group"
       }
     ],
     "keybindings": [

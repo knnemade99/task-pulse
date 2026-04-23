@@ -1,4 +1,4 @@
-# TaskPulse
+# Task Pulse
 
 A VS Code / Cursor extension that runs a configurable series of terminal commands **sequentially** — with live step-by-step output, colored progress indicators, and a summary report right in the integrated terminal.
 
@@ -19,11 +19,11 @@ A VS Code / Cursor extension that runs a configurable series of terminal command
 
 ## Extension Settings
 
-| Setting                       | Type      | Default                                     | Description                                                                                  |
-| ----------------------------- | --------- | ------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| `taskPulse.commandGroups`     | `object`  | `{"greet": ["echo Welcome to TaskPulse!"]}` | Named groups of commands to run sequentially. e.g. `"greet": ["echo Welcome to TaskPulse!"]` |
-| `taskPulse.stopOnError`       | `boolean` | `true`                                      | Stop executing remaining commands if one fails.                                              |
-| `taskPulse.autoCloseTerminal` | `boolean` | `true`                                      | Automatically close the terminal after all commands complete.                                |
+| Setting                       | Type      | Default                                      | Description                                                                                   |
+| ----------------------------- | --------- | -------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `taskPulse.commandGroups`     | `object`  | `{"greet": ["echo Welcome to Task Pulse!"]}` | Named groups of commands to run sequentially. e.g. `"greet": ["echo Welcome to Task Pulse!"]` |
+| `taskPulse.stopOnError`       | `boolean` | `true`                                       | Stop executing remaining commands if one fails.                                               |
+| `taskPulse.autoCloseTerminal` | `boolean` | `true`                                       | Automatically close the terminal after all commands complete.                                 |
 
 ### Configuring Command Groups
 
@@ -36,16 +36,16 @@ Or add directly to your `settings.json`:
 ```json
 {
   "taskPulse.commandGroups": {
-    "greet": ["echo Welcome to TaskPulse!"]
+    "greet": ["echo Welcome to Task Pulse!"]
   }
 }
 ```
 
 ## Commands
 
-| Command                        | Keybinding                     | Description                             |
-| ------------------------------ | ------------------------------ | --------------------------------------- |
-| `TaskPulse: Run Command Group` | `Cmd+Shift+R` / `Ctrl+Shift+R` | Pick and run a configured command group |
+| Command                         | Keybinding                     | Description                             |
+| ------------------------------- | ------------------------------ | --------------------------------------- |
+| `Task Pulse: Run Command Group` | `Cmd+Shift+R` / `Ctrl+Shift+R` | Pick and run a configured command group |
 
 ## Known Issues
 
@@ -67,4 +67,4 @@ None at this time. If you run into problems, please open an issue in the reposit
 
 ---
 
-Enjoy coding with TaskPulse!
+Enjoy coding with Task Pulse!
