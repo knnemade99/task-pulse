@@ -1,0 +1,88 @@
+{
+  "name": "task-pulse",
+  "displayName": "TaskPulse",
+  "description": "Run a configurable series of terminal commands sequentially, with live step-by-step output in the terminal.",
+  "version": "0.0.1",
+  "publisher": "knnemade99",
+  "icon": "Task Pulse Logo.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "terminal",
+    "commands",
+    "runner",
+    "sequential",
+    "tasks",
+    "automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knnemade99/task-pulse"
+  },
+  "homepage": "https://github.com/knnemade99/task-pulse#readme",
+  "bugs": {
+    "url": "https://github.com/knnemade99/task-pulse/issues"
+  },
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "TaskPulse",
+      "properties": {
+        "taskPulse.commandGroups": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "default": {
+            "greet": [
+              "echo TaskPulse!"
+            ]
+          },
+          "description": "Named groups of commands to run sequentially. Each key is a group name, each value is an array of shell commands."
+        },
+        "taskPulse.stopOnError": {
+          "type": "boolean",
+          "default": true,
+          "description": "Stop executing remaining commands if one fails."
+        },
+        "taskPulse.autoCloseTerminal": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically close the terminal after all commands complete successfully."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "taskPulse.runGroup",
+        "title": "TaskPulse: Run Command Group"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "taskPulse.runGroup",
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  }
+}
