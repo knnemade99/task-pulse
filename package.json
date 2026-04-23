@@ -2,7 +2,7 @@
   "name": "task-pulse",
   "displayName": "Task Pulse",
   "description": "Run a configurable series of terminal commands sequentially, with live step-by-step output in the terminal.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "knnemade99",
   "icon": "logo.png",
   "license": "MIT",

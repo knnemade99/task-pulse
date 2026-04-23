@@ -2,6 +2,12 @@
 
 All notable changes to the "task-pulse" extension will be documented in this file.
 
+## [0.0.2] - 2026-04-23
+
+### Changed
+- Renamed display name from "TaskPulse" to "Task Pulse"
+- Added cross-platform support (Windows via PowerShell, macOS/Linux via Bash)
+
 ## [0.0.1] - 2026-04-23
 
 ### Added

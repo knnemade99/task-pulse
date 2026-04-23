@@ -53,6 +53,11 @@ None at this time. If you run into problems, please open an issue in the reposit
 
 ## Release Notes
 
+### 0.0.2
+
+- Renamed display name to "Task Pulse"
+- Added cross-platform support (Windows via PowerShell, macOS/Linux via Bash)
+
 ### 0.0.1
 
 - Initial release
