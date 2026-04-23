@@ -4,7 +4,7 @@
   "description": "Run a configurable series of terminal commands sequentially, with live step-by-step output in the terminal.",
   "version": "0.0.1",
   "publisher": "knnemade99",
-  "icon": "Task Pulse Logo.png",
+  "icon": "logo.png",
   "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
